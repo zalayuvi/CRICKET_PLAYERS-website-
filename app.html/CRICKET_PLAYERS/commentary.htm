@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title> Commentary - Cricket Galaxy</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 30px;
+    }
+    h1 {
+      text-align: center;
+      color: #00f0ff;
+      margin-bottom: 30px;
+    }
+    .commentary-box {
+      background: #1a1a2d;
+      border-radius: 15px;
+      padding: 25px;
+      max-width: 900px;
+      margin: auto;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    }
+    .comment {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 30px;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    .comment img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 20px;
+      border: 2px solid #00f0ff;
+    }
+    .comment-content {
+      background: #222244;
+      padding: 15px;
+      border-radius: 10px;
+      width: 100%;
+      position: relative;
+    }
+    .commentator {
+      font-weight: bold;
+      color: #00f0ff;
+      margin-bottom: 8px;
+    }
+    audio {
+      margin-top: 10px;
+      width: 100%;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔊 Live Audio Commentary</h1>
+
+  <div class="commentary-box">
+
+    <!-- Aakash Chopra -->
+    <div class="comment">
+      <img src="images/aakash.jpg" alt="Aakash Chopra">
+      <div class="comment-content">
+        <div class="commentator">Aakash Chopra</div>
+        <div>What a beautiful shot! Kohli is in top form today. 💥</div>
+        <audio controls>
+          <source src="audio/aakash.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+      </div>
+    </div>
+
+    <!-- Harsha Bhogle -->
+    <div class="comment">
+      <img src="images/harsha.jpg" alt="Harsha Bhogle">
+      <div class="comment-content">
+        <div class="commentator">Harsha Bhogle</div>
+        <div>This is classic India-Pakistan drama, folks! 🎯</div>
+        <audio controls>
+          <source src="audio/harsha.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+      </div>
+    </div>
+
+    <!-- Sunil Gavaskar -->
+    <div class="comment">
+      <img src="images/sunil.jpg" alt="Sunil Gavaskar">
+      <div class="comment-content">
+        <div class="commentator">Sunil Gavaskar</div>
+        <div>The ball is turning! Spinner magic is happening here. 🌀</div>
+        <audio controls>
+          <source src="audio/sunil.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+      </div>
+    </div>
+
+    <!-- Nasser Hussain -->
+    <div class="comment">
+      <img src="images/nasser.jpg" alt="Nasser Hussain">
+      <div class="comment-content">
+        <div class="commentator">Nasser Hussain</div>
+        <div>That’s brilliant bowling – top edge and he's gone! 🔥</div>
+        <audio controls>
+          <source src="audio/nasser.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

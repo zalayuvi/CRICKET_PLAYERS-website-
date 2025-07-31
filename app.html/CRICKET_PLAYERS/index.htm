@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cricket Galaxy - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <h1>🏏 Cricket Galaxy</h1>
+      <p>Explore Teams, Rankings, Players & More in Grand Style</p>
+      <nav class="nav-buttons">
+        <a href="players.html">Players</a>
+        <a href="rankings.html">Rankings</a>
+        <a href="teams.html">Teams</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="commentary.html">commentary</a>
+        <a href="stadiums.html">stadiums</a>
+        <a href="league.html">league</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="section">
+      <h2>🌍 ICC Teams</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ICC Teams Dropdown</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: hsl(0, 0%, 15%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 80px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .btn {
+      padding: 12px 24px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 30px;
+      background: hsl(180, 2%, 17%);
+      color: #f5f0f0;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #5eff00;
+      color: #fff;
+    }
+    .team-list {
+      margin-top: 20px;
+      display: none;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      width: 100%;
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.2);
+    }
+    .team {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-size: 1.1rem;
+    }
+    .team img {
+      width: 40px;
+      height: 25px;
+      border-radius: 5px;
+    }
+    .visible {
+      display: flex;
+      animation: fadeIn 0.5s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🏏 Welcome to Cricket Galaxy</h1>
+  <button class="btn" onclick="toggleTeams()">Show ICC Teams</button>
+
+  <div class="team-list" id="teamList">
+    <div class="team"><img src="flags/india.png" alt="India"> India 🇮🇳</div>
+    <div class="team"><img src="flags/australia.png" alt="Australia"> Australia 🇦🇺</div>
+    <div class="team"><img src="flags/england.png" alt="England"> England 🏴</div>
+    <div class="team"><img src="flags/newzealand.png" alt="New Zealand"> New Zealand 🇳🇿</div>
+    <div class="team"><img src="flags/pakistan.png" alt="Pakistan"> Pakistan 🇵🇰</div>
+    <div class="team"><img src="flags/southafrica.png" alt="South Africa"> South Africa 🇿🇦</div>
+    <div class="team"><img src="flags/srilanka.png" alt="Sri Lanka"> Sri Lanka 🇱🇰</div>
+    <div class="team"><img src="flags/afghanistan.png" alt="Afghanistan"> Afghanistan 🇦🇫</div>
+    <div class="team"><img src="flags/westindies.png" alt="West Indies"> West Indies 🇧🇧</div>
+    <div class="team"><img src="flags/bangladesh.png" alt="Bangladesh"> Bangladesh 🇧🇩</div>
+  </div>
+
+  <script>
+    function toggleTeams() {
+      const teamList = document.getElementById('teamList');
+      teamList.classList.toggle('visible');
+    }
+  </script>
+
+</body>
+</html>
+
+      <p>Explore all major international teams with their full squad, captains, and achievements.</p>
+    </section>
+
+    <section class="section">
+      <h2>⭐ Star Players</h2>
+      <p>Discover the top-ranked batsmen, bowlers and all-rounders across all cricket formats.</p>
+    </section>
+
+    <section class="section">
+      <h2>📅 Upcoming Matches</h2>
+      <p>Stay updated with upcoming series, match dates, and live coverage links.</p>
+    </section>
+
+    <footer>
+      <p>© 2025 Cricket Galaxy. Designed for cricket lovers worldwide.</p>
+    </footer>
+  </div>
+</body>
+</html>
+
+<a href="leagues.html">Leagues</a>

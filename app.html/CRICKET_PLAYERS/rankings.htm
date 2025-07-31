@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ICC Top 10 Player Rankings</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(145deg, #001f3f, #003366, #004080);
+      color: #fff;
+      padding: 40px 20px;
+      min-height: 100vh;
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 60px;
+      color: #00ffe7;
+      text-shadow: 3px 3px 10px #000;
+      margin-bottom: 50px;
+      animation: slideInDown 1s ease-in-out;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 36px;
+      color: #ffd700;
+      margin: 50px 0 20px;
+      text-shadow: 2px 2px 6px #000;
+      animation: slideInLeft 0.7s ease-in-out;
+    }
+
+    table {
+      width: 90%;
+      margin: 0 auto 50px;
+      border-collapse: collapse;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+      animation: popIn 1s ease-in;
+    }
+
+    th, td {
+      padding: 16px 20px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    th {
+      background: #00ffff;
+      color: #000;
+      font-weight: bold;
+    }
+
+    td {
+      background: rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    tr:hover td {
+      background: rgba(0, 255, 255, 0.12);
+      transform: scale(1.02);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideInDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideInLeft {
+      from { transform: translateX(-40px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0.95); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @media screen and (max-width: 768px) {
+      h1 { font-size: 40px; }
+      h2 { font-size: 24px; }
+      th, td { font-size: 15px; padding: 12px 10px; }
+      table { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  
+  <h1>🏏 ODI - Top 10 Batsmen</h1>
+  <table>
+    <tr><th>#</th><th>Player</th><th>Country</th><th>Rating</th></tr>
+    <tr><td>1</td><td>Shubman Gill</td><td>IND</td><td>784</td></tr>
+    <tr><td>2</td><td>Babar Azam</td><td>PAK</td><td>766</td></tr>
+    <tr><td>3</td><td>Rohit Sharma</td><td>IND</td><td>756</td></tr>
+    <tr><td>4</td><td>Virat Kohli</td><td>IND</td><td>736</td></tr>
+    <tr><td>5</td><td>Daryl Mitchell</td><td>NZ</td><td>720</td></tr>
+    <tr><td>6</td><td>Charith Asalanka</td><td>SL</td><td>709</td></tr>
+    <tr><td>7</td><td>Harry Tector</td><td>IRE</td><td>708</td></tr>
+    <tr><td>8</td><td>Shreyas Iyer</td><td>IND</td><td>704</td></tr>
+    <tr><td>9</td><td>Ibrahim Zadran</td><td>AFG</td><td>676</td></tr>
+    <tr><td>10</td><td>Kusal Mendis</td><td>SL</td><td>669</td></tr>
+  </table>
+
+  <h2>🎯 ODI - Top 10 Bowlers</h2>
+  <table>
+    <tr><th>#</th><th>Player</th><th>Country</th><th>Rating</th></tr>
+    <tr><td>1</td><td>Maheesh Theekshana</td><td>SL</td><td>671</td></tr>
+    <tr><td>2</td><td>Kuldeep Yadav</td><td>IND</td><td>650</td></tr>
+    <tr><td>3</td><td>Keshav Maharaj</td><td>SA</td><td>648</td></tr>
+    <tr><td>4</td><td>Bernard Scholtz</td><td>NAM</td><td>644</td></tr>
+    <tr><td>5</td><td>Rashid Khan</td><td>AFG</td><td>640</td></tr>
+    <tr><td>6</td><td>Mitchell Santner</td><td>NZ</td><td>637</td></tr>
+    <tr><td>7</td><td>Matt Henry</td><td>NZ</td><td>622</td></tr>
+    <tr><td>8</td><td>Wanindu Hasaranga</td><td>SL</td><td>619</td></tr>
+    <tr><td>9</td><td>Ravindra Jadeja</td><td>IND</td><td>616</td></tr>
+    <tr><td>10</td><td>Adam Zampa</td><td>AUS</td><td>614</td></tr>
+  </table>
+
+  <h2>⚡ ODI - Top 10 All-Rounders</h2>
+  <table>
+    <tr><th>#</th><th>Player</th><th>Country</th><th>Rating</th></tr>
+    <tr><td>1</td><td>Mohammad Nabi</td><td>AFG</td><td>318</td></tr>
+    <tr><td>2</td><td>Sikandar Raza</td><td>ZIM</td><td>291</td></tr>
+    <tr><td>3</td><td>Rashid Khan</td><td>AFG</td><td>254</td></tr>
+    <tr><td>4</td><td>Mehidy Hasan Miraz</td><td>BAN</td><td>252</td></tr>
+    <tr><td>5</td><td>Michael Bracewell</td><td>NZ</td><td>246</td></tr>
+    <tr><td>6</td><td>Gerhard Erasmus</td><td>NAM</td><td>245</td></tr>
+    <tr><td>7</td><td>Brandon McMullen</td><td>SCO</td><td>240</td></tr>
+    <tr><td>8</td><td>Glenn Maxwell</td><td>AUS</td><td>233</td></tr>
+    <tr><td>9</td><td>Mitchell Santner</td><td>NZ</td><td>225</td></tr>
+    <tr><td>10</td><td>Zeeshan Maqsood</td><td>OMA</td><td>204</td></tr>
+  </table>
+
+  <h2>🏏 T20I - Top 10 Batsmen</h2>
+  <table>
+    <tr><th>#</th><th>Player</th><th>Country</th><th>Rating</th></tr>
+    <tr><td>1</td><td>Suryakumar Yadav</td><td>IND</td><td>861</td></tr>
+    <tr><td>2</td><td>Phil Salt</td><td>ENG</td><td>802</td></tr>
+    <tr><td>3</td><td>Mohammad Rizwan</td><td>PAK</td><td>781</td></tr>
+    <tr><td>4</td><td>Babar Azam</td><td>PAK</td><td>769</td></tr>
+    <tr><td>5</td><td>Jos Buttler</td><td>ENG</td><td>758</td></tr>
+    <tr><td>6</td><td>Rilee Rossouw</td><td>SA</td><td>751</td></tr>
+    <tr><td>7</td><td>Rahmanullah Gurbaz</td><td>AFG</td><td>743</td></tr>
+    <tr><td>8</td><td>David Malan</td><td>ENG</td><td>738</td></tr>
+    <tr><td>9</td><td>Ruturaj Gaikwad</td><td>IND</td><td>728</td></tr>
+    <tr><td>10</td><td>Travis Head</td><td>AUS</td><td>722</td></tr>
+  </table>
+
+  <h2>🎯 T20I - Top 10 Bowlers</h2>
+  <table>
+    <tr><th>#</th><th>Player</th><th>Country</th><th>Rating</th></tr>
+    <tr><td>1</td><td>Wanindu Hasaranga</td><td>SL</td><td>705</td></tr>
+    <tr><td>2</td><td>Rashid Khan</td><td>AFG</td><td>691</td></tr>
+    <tr><td>3</td><td>Adil Rashid</td><td>ENG</td><td>677</td></tr>
+    <tr><td>4</td><td>Maheesh Theekshana</td><td>SL</td><td>670</td></tr>
+    <tr><td>5</td><td>Adam Zampa</td><td>AUS</td><td>666</td></tr>
+    <tr><td>6</td><td>Sam Curran</td><td>ENG</td><td>663</td></tr>
+    <tr><td>7</td><td>Naveen-ul-Haq</td><td>AFG</td><td>661</td></tr>
+    <tr><td>8</td><td>Tabraiz Shamsi</td><td>SA</td><td>657</td></tr>
+    <tr><td>9</td><td>Mark Wood</td><td>ENG</td><td>649</td></tr>
+    <tr><td>10</td><td>Jasprit Bumrah</td><td>IND</td><td>648</td></tr>
+  </table>
+
+  <h2>⚡ T20I - Top 10 All-Rounders</h2>
+  <table>
+    <tr><th>#</th><th>Player</th><th>Country</th><th>Rating</th></tr>
+    <tr><td>1</td><td>Shakib Al Hasan</td><td>BAN</td><td>267</td></tr>
+    <tr><td>2</td><td>Hardik Pandya</td><td>IND</td><td>253</td></tr>
+    <tr><td>3</td><td>Sikandar Raza</td><td>ZIM</td><td>249</td></tr>
+    <tr><td>4</td><td>Mohammad Nabi</td><td>AFG</td><td>244</td></tr>
+    <tr><td>5</td><td>Wanindu Hasaranga</td><td>SL</td><td>239</td></tr>
+    <tr><td>6</td><td>Mitchell Marsh</td><td>AUS</td><td>231</td></tr>
+    <tr><td>7</td><td>Marcus Stoinis</td><td>AUS</td><td>228</td></tr>
+    <tr><td>8</td><td>Liam Livingstone</td><td>ENG</td><td>224</td></tr>
+    <tr><td>9</td><td>Ravindra Jadeja</td><td>IND</td><td>218</td></tr>
+    <tr><td>10</td><td>Dwayne Bravo</td><td>WI</td><td>215</td></tr>
+    </table>
+
+    <h2>🏆 Test - Top 10 Batsmen</h2>
+  <table>
+    <tr><th>#</th><th>Player</th><th>Country</th><th>Rating</th></tr>
+    <tr><td>1</td><td>Kane Williamson</td><td>NZ</td><td>859</td></tr>
+    <tr><td>2</td><td>Joe Root</td><td>ENG</td><td>842</td></tr>
+    <tr><td>3</td><td>Steve Smith</td><td>AUS</td><td>829</td></tr>
+    <tr><td>4</td><td>Babar Azam</td><td>PAK</td><td>800</td></tr>
+    <tr><td>5</td><td>Marnus Labuschagne</td><td>AUS</td><td>794</td></tr>
+    <tr><td>6</td><td>Dimuth Karunaratne</td><td>SL</td><td>782</td></tr>
+    <tr><td>7</td><td>Virat Kohli</td><td>IND</td><td>775</td></tr>
+    <tr><td>8</td><td>Daryl Mitchell</td><td>NZ</td><td>767</td></tr>
+    <tr><td>9</td><td>Usman Khawaja</td><td>AUS</td><td>761</td></tr>
+    <tr><td>10</td><td>Ben Stokes</td><td>ENG</td><td>754</td></tr>
+  </table>
+
+  <h2>🎯 Test - Top 10 Bowlers</h2>
+  <table>
+    <tr><th>#</th><th>Player</th><th>Country</th><th>Rating</th></tr>
+    <tr><td>1</td><td>Ravichandran Ashwin</td><td>IND</td><td>860</td></tr>
+    <tr><td>2</td><td>Kagiso Rabada</td><td>SA</td><td>837</td></tr>
+    <tr><td>3</td><td>Pat Cummins</td><td>AUS</td><td>822</td></tr>
+    <tr><td>4</td><td>James Anderson</td><td>ENG</td><td>811</td></tr>
+    <tr><td>5</td><td>Josh Hazlewood</td><td>AUS</td><td>799</td></tr>
+    <tr><td>6</td><td>Ollie Robinson</td><td>ENG</td><td>783</td></tr>
+    <tr><td>7</td><td>Jasprit Bumrah</td><td>IND</td><td>771</td></tr>
+    <tr><td>8</td><td>Shaheen Afridi</td><td>PAK</td><td>768</td></tr>
+    <tr><td>9</td><td>Tim Southee</td><td>NZ</td><td>765</td></tr>
+    <tr><td>10</td><td>Mohammed Shami</td><td>IND</td><td>760</td></tr>
+  </table>
+
+  <h2>⚡ Test - Top 10 All-Rounders</h2>
+  <table>
+    <tr><th>#</th><th>Player</th><th>Country</th><th>Rating</th></tr>
+    <tr><td>1</td><td>Ravindra Jadeja</td><td>IND</td><td>440</td></tr>
+    <tr><td>2</td><td>Ben Stokes</td><td>ENG</td><td>425</td></tr>
+    <tr><td>3</td><td>Shakib Al Hasan</td><td>BAN</td><td>410</td></tr>
+    <tr><td>4</td><td>Kyle Mayers</td><td>WI</td><td>390</td></tr>
+    <tr><td>5</td><td>Mitchell Starc</td><td>AUS</td><td>375</td></tr>
+    <tr><td>6</td><td>Jason Holder</td><td>WI</td><td>365</td></tr>
+    <tr><td>7</td><td>Marco Jansen</td><td>SA</td><td>355</td></tr>
+    <tr><td>8</td><td>Axar Patel</td><td>IND</td><td>345</td></tr>
+    <tr><td>9</td><td>Pat Cummins</td><td>AUS</td><td>340</td></tr>
+    <tr><td>10</td><td>Chris Woakes</td><td>ENG</td><td>330</td></tr>
+  </table>
+  
+</body>
+</html>
