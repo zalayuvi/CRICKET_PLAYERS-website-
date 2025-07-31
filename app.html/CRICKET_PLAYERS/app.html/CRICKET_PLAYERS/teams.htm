@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top 10 ICC Teams</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(145deg, #001f3f, #003366, #004080);
+      color: #fff;
+      min-height: 100vh;
+      padding: 40px 20px;
+      background-image: url('https://images.unsplash.com/photo-1587486913049-3ac3e3dfc5fc');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    .container {
+      background: rgba(0,0,0,0.6);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 60px;
+      color: #00ffe7;
+      text-shadow: 3px 3px 15px #000;
+      margin-bottom: 50px;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+    }
+
+    .team-card {
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid #00ffff;
+      border-radius: 20px;
+      text-align: center;
+      padding: 20px;
+      transition: all 0.4s ease;
+      box-shadow: 0 0 15px rgba(0,255,255,0.3);
+    }
+
+    .team-card:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 30px #00ffff;
+    }
+
+    .team-card img {
+      width: 100px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      border: 2px solid #fff;
+    }
+
+    .team-card h2 {
+      font-size: 24px;
+      color: #fff;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 38px;
+      }
+      .team-card h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🏏 Top 10 ICC Teams</h1>
+    <div class="team-grid">
+
+      <div class="team-card">
+        <img src="flags/india.png" alt="India Flag">
+        <h2>India</h2>
+      </div>
+
+      <div class="team-card">
+        <img src="flags/australia.png" alt="Australia Flag">
+        <h2>Australia</h2>
+      </div>
+
+      <div class="team-card">
+        <img src="flags/england.png" alt="England Flag">
+        <h2>England</h2>
+      </div>
+
+      <div class="team-card">
+        <img src="flags/southafrica.png" alt="South Africa Flag">
+        <h2>South Africa</h2>
+      </div>
+
+      <div class="team-card">
+        <img src="flags/newzealand.png" alt="New Zealand Flag">
+        <h2>New Zealand</h2>
+      </div>
+
+      <div class="team-card">
+        <img src="flags/pakistan.png" alt="Pakistan Flag">
+        <h2>Pakistan</h2>
+      </div>
+
+      <div class="team-card">
+        <img src="flags/srilanka.png" alt="Sri Lanka Flag">
+        <h2>Sri Lanka</h2>
+      </div>
+
+      <div class="team-card">
+        <img src="flags/bangladesh.png" alt="Bangladesh Flag">
+        <h2>Bangladesh</h2>
+      </div>
+
+      <div class="team-card">
+        <img src="flags/afghanistan.png" alt="Afghanistan Flag">
+        <h2>Afghanistan</h2>
+      </div>
+
+      <div class="team-card">
+        <img src="flags/scotland.png" alt="scotland flag">
+        <h2>scotland</h2>
+      </div>
+
+    </div>
+    <footer>
+      <p>© 2025 ICC Rankings | Designed by Yuvi</p>
+    </footer>
+  </div>
+</body>
+</html>

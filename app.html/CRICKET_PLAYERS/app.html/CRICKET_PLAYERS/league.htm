@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🏏 Cricket Leagues</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-bottom: 2px solid #fff;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+    .league-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      padding: 40px 30px;
+    }
+    .league-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease;
+    }
+    .league-card:hover {
+      transform: translateY(-10px);
+    }
+    .league-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .league-card h3 {
+      margin: 10px 0 5px;
+      font-size: 1.4rem;
+    }
+    .league-card p {
+      font-size: 0.95rem;
+      padding: 0 10px 15px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌐 Global Cricket Leagues</h1>
+    <p>Explore famous cricket leagues around the world</p>
+  </header>
+
+  <section class="league-container">
+
+    <div class="league-card">
+      <img src="images/ipl.jpg" alt="IPL">
+      <h3>🇮🇳 Indian Premier League (IPL)</h3>
+      <p>India’s biggest T20 league with star international players.</p>
+    </div>
+
+    <div class="league-card">
+      <img src="images/bbl.jpg" alt="BBL">
+      <h3>🇦🇺 Big Bash League (BBL)</h3>
+      <p>Australia’s fun-packed T20 tournament with family-friendly vibes.</p>
+    </div>
+
+    <div class="league-card">
+      <img src="images/psl.jpg" alt="PSL">
+      <h3>🇵🇰 Pakistan Super League (PSL)</h3>
+      <p>Packed with raw talent and thrilling finishes from Pakistan.</p>
+    </div>
+
+    <div class="league-card">
+      <img src="images/cpl.jpg" alt="CPL">
+      <h3>🇻🇨 Caribbean Premier League (CPL)</h3>
+      <p>Known for colorful cricket, party crowd, and six-hitting!</p>
+    </div>
+
+    <div class="league-card">
+      <img src="images/sat20.jpg" alt="SA20">
+      <h3>🇿🇦 SA20 League</h3>
+      <p>South Africa's new elite T20 competition starting a global buzz.</p>
+    </div>
+
+    <div class="league-card">
+      <img src="images/thehundred.jpg" alt="The Hundred">
+      <h3>🏴 England - The Hundred</h3>
+      <p>100 balls, 1 intense game. England's fresh cricket format!</p>
+    </div>
+
+    <div class="league-card">
+      <img src="images/lpl.jpg" alt="LPL">
+      <h3>🇱🇰 Lanka Premier League (LPL)</h3>
+      <p>Sri Lanka's top domestic tournament with growing fanbase.</p>
+    </div>
+
+    <div class="league-card">
+      <img src="images/gt20.jpg" alt="GT20 Canada">
+      <h3>🇨🇦 Global T20 Canada</h3>
+      <p>Canadian cricket league hosting stars from around the globe.</p>
+    </div>
+
+    <div class="league-card">
+      <img src="images/usa.jpg" alt="MLC">
+      <h3>🇺🇸 Major League Cricket (USA)</h3>
+      <p>USA’s first-ever T20 franchise league launched in 2023.</p>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2025 Cricket Galaxy | All logos belong to respective owners
+  </footer>
+</body>
+</html>

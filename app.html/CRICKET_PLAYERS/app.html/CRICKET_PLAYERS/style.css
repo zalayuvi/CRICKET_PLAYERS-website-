@@ -1,0 +1,219 @@
+/* Background Image with Dark Overlay */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: url('images/cricket_bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: hsl(0, 97%, 53%);
+}
+
+.overlay {
+  background: hwb(51 2% 1%);
+  min-height: 100vh;
+  padding: 30px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+header h1 {
+  font-size: 60px;
+  color: #00ffff;
+  text-shadow: 2px 2px 5px black;
+}
+
+header p {
+  font-size: 22px;
+  color: #fa7c06;
+  margin-top: 10px;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.nav-buttons a {
+  padding: 12px 28px;
+  background: rgba(0, 255, 255, 0.1);
+  border: 2px solid #00ffff;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px #00ffff33;
+}
+
+.nav-buttons a:hover {
+  background: #00ffff;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffff;
+}
+
+/* Section Boxes */
+.section {
+  margin: 50px auto;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 32px;
+  color: #00ffff;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.section p {
+  font-size: 18px;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #bbb;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 42px;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+  }
+
+  .section {
+    margin: 30px 10px;
+  }
+}
+
+/* Footer */
+footer {
+  background: lab(78.76% 10.22 79.49);
+  color: #2f302d;
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 1px solid #00ffe5;
+}
+
+footer .socials {
+  margin-top: 15px;
+}
+
+footer .socials a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #00ffe5;
+  transition: 0.3s;
+}
+
+footer .socials a:hover {
+  text-shadow: 0 0 10px #00ffe5;
+}
+
+.search-container {
+  text-align: center;
+  margin: 20px auto;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Body background */
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  padding: 20px;
+}
+
+/* Section for each team */
+.team {
+  margin-bottom: 60px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Team heading */
+.team-name {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+  color: #00ffff;
+}
+
+/* Player list styles */
+.player-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  list-style: none;
+  padding: 0;
+}
+
+/* Each player card */
+.player-list li {
+  background: #c5b7abf6;
+  border-radius: 50px;
+  padding: 50px;
+  width: 1000px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 5px 50px #ffd903f5;
+}
+
+/* Hover effect */
+.player-list li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 25px rgba(0, 255, 255, 0.4);
+}
+
+/* Player images */
+.player-list img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 4px solid #00ffff;
+  box-shadow: 0 0 500px #00ffff;
+}
+
+/* Player name */
+.player-list li span {
+  display: block;
+  font-size: 18px;
+  margin-top: 8px;
+  color: #ffffff;
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cricket Schedule 2025 & 2026</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #020024, lab(36.66% 0.4 0.14), hsl(0, 0%, 44%));
+      color: hwb(48 96% 2%);
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .filters {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .filters select {
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: none;
+    }
+
+    .schedule-container {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      color: #ffd700;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: rgba(255, 255, 255, 0.05);
+      margin-top: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid #ffffff33;
+    }
+
+    th {
+      background-color: #1e1e1e;
+      color: lab(76.38% -30.02 -28.55);
+    }
+
+    tr:hover {
+      background-color: #7b8ba1f3;
+    }
+
+    .logo {
+      width: 32px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    @media screen and (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      th {
+        position: sticky;
+        top: 0;
+        background: hsl(0, 100%, 51%);
+      }
+
+      td {
+        text-align: left;
+        padding-left: 50%;
+        position: relative;
+      }
+
+      td::before {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-weight: bold;
+        color: #f0f00b;
+      }
+
+      td:nth-of-type(1)::before { content: "Date"; }
+      td:nth-of-type(2)::before { content: "Match"; }
+      td:nth-of-type(3)::before { content: "Venue"; }
+      td:nth-of-type(4)::before { content: "Format"; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>📅 ICC Cricket Match Schedule - 2025 & 2026</header>
+
+  <div class="filters">
+    <label for="yearFilter">Filter by Year: </label>
+    <select id="yearFilter" onchange="filterSchedule()">
+      <option value="all">All</option>
+      <option value="2025">2025</option>
+      <option value="2026">2026</option>
+    </select>
+  </div>
+
+  <div class="schedule-container">
+    <table id="scheduleTable">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Match</th>
+          <th>Venue</th>
+          <th>Format</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 2025 -->
+        <tr data-year="2025">
+          <td>15 Jan 2025</td>
+          <td><img src="images/flags/india.png" class="logo">India vs Australia <img src="images/flags/australia.png" class="logo"></td>
+          <td>Mumbai, India</td>
+          <td>Test</td>
+        </tr>
+        <tr data-year="2025">
+          <td>28 Feb 2025</td>
+          <td><img src="images/flags/pakistan.png" class="logo">Pakistan vs England <img src="images/flags/england.png" class="logo"></td>
+          <td>Lahore, Pakistan</td>
+          <td>ODI</td>
+        </tr>
+        <tr data-year="2025">
+          <td>20 Apr 2025</td>
+          <td><img src="images/flags/southafrica.png" class="logo">South Africa vs New Zealand <img src="images/flags/newzealand.png" class="logo"></td>
+          <td>Durban, SA</td>
+          <td>T20</td>
+        </tr>
+        <!-- 2026 -->
+        <tr data-year="2026">
+          <td>10 Jan 2026</td>
+          <td><img src="images/flags/india.png" class="logo">India vs Pakistan <img src="images/flags/pakistan.png" class="logo"></td>
+          <td>Ahmedabad, India</td>
+          <td>ODI</td>
+        </tr>
+        <tr data-year="2026">
+          <td>18 Mar 2026</td>
+          <td><img src="images/flags/australia.png" class="logo">Australia vs England <img src="images/flags/england.png" class="logo"></td>
+          <td>Melbourne, AUS</td>
+          <td>Test</td>
+        </tr>
+        <tr data-year="2026">
+          <td>30 Jun 2026</td>
+          <td><img src="images/flags/newzealand.png" class="logo">New Zealand vs Sri Lanka <img src="images/flags/srilanka.png" class="logo"></td>
+          <td>Auckland, NZ</td>
+          <td>T20</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    function filterSchedule() {
+      const year = document.getElementById("yearFilter").value;
+      document.querySelectorAll("#scheduleTable tbody tr").forEach(row => {
+        if (year === "all") {
+          row.style.display = "";
+        } else {
+          row.style.display = row.getAttribute("data-year") === year ? "" : "none";
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
